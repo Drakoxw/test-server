@@ -99,6 +99,6 @@ func DeleteUser(w http.ResponseWriter, r *http.Request) {
 	models.DeleteUser(id)
 	utils.SendResponse(w, utils.RespOk{
 		Message: "Usuario modificado",
-		Data:    models.NewUser("", "", ""),
+		Data:    models.NewUser(0, "", "", ""),
 	})
 }
