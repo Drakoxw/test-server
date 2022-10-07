@@ -61,7 +61,7 @@ func CreatedResponse(w http.ResponseWriter, dataSend RespOk) {
 	response.Send()
 }
 
-func ResponseFile(w http.ResponseWriter, r *http.Request, dataSend string) {
+func ResponseFile(w http.ResponseWriter, dataSend string) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(200)
 	dataResp := fmt.Sprintf(`{

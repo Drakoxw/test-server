@@ -13,7 +13,7 @@ func ReadFile(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err)
 	} else {
-		utils.ResponseFile(w, r, file)
+		utils.ResponseFile(w, file)
 	}
 }
 
